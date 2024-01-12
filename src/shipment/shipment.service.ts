@@ -93,7 +93,6 @@ export class ShipmentService {
   async update(term: string, updateShipmentDto: UpdateShipmentDto) {    
     try {
       const shipment = await this.findOne( term );
-      console.log( 'shipment:', shipment );
       
       if ( updateShipmentDto.trackingNumber ) updateShipmentDto.trackingNumber = updateShipmentDto.trackingNumber.toUpperCase();
       

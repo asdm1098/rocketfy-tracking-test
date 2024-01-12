@@ -29,9 +29,6 @@ export class UserRoleGuard implements CanActivate {
 
     // Lanzar una excepción si no se encuentra el usuario
     if(!user) throw new BadRequestException('User not found');
-
-    // Imprimir en consola los roles del usuario (útil para depuración)
-    console.log({ userRoles: user.roles});
     
     // Verificar si el usuario tiene alguno de los roles válidos
     for ( const role of user.roles ) {

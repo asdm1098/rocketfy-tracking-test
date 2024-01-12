@@ -1,4 +1,4 @@
-import { PartialType } from '@nestjs/mapped-types';
+import { PartialType } from '@nestjs/swagger';
 import { CreateShipmentDto } from './create-shipment.dto';
 import { IsOptional, IsString } from 'class-validator';
 
