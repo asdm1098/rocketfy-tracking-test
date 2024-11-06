@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable, InternalServerErrorException, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model, Mongoose, Types, isValidObjectId } from 'mongoose';
+import { Model, Types, isValidObjectId } from 'mongoose';
 import { User } from 'src/auth/entities/auth.entity';
 import { Product } from 'src/product/entities/product.entity';
 import { Shipment } from './entities/shipment.entity';
